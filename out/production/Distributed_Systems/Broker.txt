@@ -1,0 +1,7 @@
+Broker IP: 192.168.1.9	,Publisher Port: 4090,   com.aueb.spotifypro.Consumer Port: 5000
+Broker IP: 192.168.1.9	,Publisher Port: 5012,   com.aueb.spotifypro.Consumer Port: 5002
+Broker IP: 192.168.1.9	,Publisher Port: 5005,   com.aueb.spotifypro.Consumer Port: 5004
+Broker IP: 		   		,Publisher Port: 	 ,   com.aueb.spotifypro.Consumer Port:
+Broker IP: 				,Publisher Port:     ,   com.aueb.spotifypro.Consumer Port:
+Broker IP: 				,Publisher Port: 	 ,   com.aueb.spotifypro.Consumer Port:
+Broker IP: 				,Publisher Port: 	 ,   com.aueb.spotifypro.Consumer Port:
