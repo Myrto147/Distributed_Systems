@@ -19,9 +19,9 @@ A music streaming on demand system based on Publisher-Broker-Consumer architectu
 
 ## ΜΕΛΗ
 
-* **Μιχαλακάκου Κωνσταντίνα** - *3150111* - [K Mih](https://github.com/Kapamih)
-* **Λάγιου Κωνσταντίνα Έλενα** - *3150087* - [Εlena Lagiou](https://github.com/hellag)
-* **Παπαδήμα Μυρτώ** - *3150135* - [MyrtPap](https://github.com/Myrto147)
-* **Βλάχος Νικηφόρος** - *3170018* - [yoh](https://github.com/nikiforosyoh)
+* **Μιχαλακάκου Κωνσταντίνα** - [K Mih](https://github.com/Kapamih)
+* **Λάγιου Κωνσταντίνα Έλενα** - [Εlena Lagiou](https://github.com/hellag)
+* **Παπαδήμα Μυρτώ** - [MyrtPap](https://github.com/Myrto147)
+* **Βλάχος Νικηφόρος** - [yoh](https://github.com/nikiforosyoh)
 
 Ομαδική εργασία στα πλαίσια του μαθήματος "Κατανεμημένα Συστήματα 2020".
