@@ -46,7 +46,7 @@ public class ConsumerThread extends Thread{
 
                 if(input.equalsIgnoreCase("brokers")){
 					
-					System.out.println("1.com.aueb.spotifypro.Consumer connected! --> " + connection.getInetAddress().getHostAddress());
+					System.out.println("1.Consumer connected! --> " + connection.getInetAddress().getHostAddress());
 
                     sendBrokerInfo(out);
                     connection.close();
@@ -69,7 +69,7 @@ public class ConsumerThread extends Thread{
                         }
                     }
 					
-					System.out.println("2.com.aueb.spotifypro.Consumer connected! --> " + connection.getInetAddress().getHostAddress());
+					System.out.println("2.Consumer connected! --> " + connection.getInetAddress().getHostAddress());
 
                     out.writeObject("end");
                     out.flush();
@@ -90,7 +90,7 @@ public class ConsumerThread extends Thread{
                 this.requestSong = (String) in.readObject();
                 Request request = new Request(requestArtist, requestSong, this );
 
-                System.out.println("3.com.aueb.spotifypro.Consumer connected! --> " + connection.getInetAddress().getHostAddress());
+                System.out.println("3.Consumer connected! --> " + connection.getInetAddress().getHostAddress());
 
                 Info publisher = art_to_pub.get(new ArtistName(requestArtist));
                 PublisherThread thread = pub_to_pubThread.get(publisher);
@@ -99,13 +99,13 @@ public class ConsumerThread extends Thread{
                 thread.addRequest(request);
 
                 //sos
-                System.out.println(connection.getInetAddress().getHostAddress() + " (com.aueb.spotifypro.Consumer Thread)> " + request.getRequestArtist() + " - " + request.getRequestSong());
+                System.out.println(connection.getInetAddress().getHostAddress() + " (Consumer Thread)> " + request.getRequestArtist() + " - " + request.getRequestSong());
 
 
                 //waits for chunks
                 MusicFile chunk = chunkQueue.take();
 
-                System.out.println("(com.aueb.spotifypro.Consumer Thread)> chunks received from publisher thread");
+                System.out.println("(Consumer Thread)> chunks received from publisher thread");
 
                 //if chunk is not fake
                 if(chunk.getTotalChunks()>0){
@@ -122,7 +122,7 @@ public class ConsumerThread extends Thread{
                         System.out.println("SENT: " + chunk.getChunkNumber());
                         out.flush();
                     }
-                    System.out.println("(com.aueb.spotifypro.Consumer Thread)> all chunks sent");
+                    System.out.println("(Consumer Thread)> all chunks sent");
 
                 }
                 else{
@@ -136,7 +136,7 @@ public class ConsumerThread extends Thread{
 
         } catch (IOException | ClassNotFoundException | InterruptedException | NoSuchAlgorithmException e) {
             //e.printStackTrace();
-            System.out.println("com.aueb.spotifypro.Consumer disconnected! --> " + connection.getInetAddress().getHostAddress());
+            System.out.println("Consumer disconnected! --> " + connection.getInetAddress().getHostAddress());
             synchronized(registeredUsers) {
                 //remove this thread from consumer threads list
                 registeredUsers.remove(this);
