@@ -50,7 +50,7 @@ public class PublisherThread extends Thread{
                 //System.out.println(connection.getPort() + "> " + data);
 
                 if (data.equalsIgnoreCase("brokers")) {
-                    System.out.println("llllllllll");
+                    
                     sendBrokerInfo(out);
                     connection.close();
 
