@@ -50,7 +50,7 @@ public class Broker extends Node {
         try {
             ConsumerServer=new ServerSocket(ConsumersPort);
             System.out.println("Broker> Waiting for connection...");
-            System.out.println("Available com.aueb.spotifypro.Consumer Port: "+ConsumersPort);
+            System.out.println("Available Consumer Port: "+ConsumersPort);
             System.out.println("Available Publisher Port: "+PublishersPort);
 
             Thread t1= new Thread() {
